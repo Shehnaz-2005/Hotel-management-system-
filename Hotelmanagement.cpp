@@ -4,27 +4,6 @@
 
 #include <string>
 
-using namespace std;
-
-// Defined below are the prices of various commodities of the hotel.
-
-#define roomsP 1200
-
-#define ACroomsP 1600
-
-#define pizzaP 100
-
-#define burgerP 110
-
-#define bhelP 40 
-
-#define kebabP 20
-
-#define cokeP 40
-
-#define spriteP 40
-
-
 
 // This class holds information about the customer.
 
@@ -45,7 +24,6 @@ class customer{
         void searchCustomer();
 
 }customerInfo[10];
-
 
 
 // This function reads basic customer information of customer.
@@ -87,9 +65,7 @@ void customer::getInfo(){
     cout << "Enter booking ID: ";
 
     cin >> booking_id;
-
 }
-
 
 
 // This function takes in the customer's name or phone number and gives out their room no.
@@ -119,14 +95,10 @@ void customer :: searchCustomer(){
                 if(n==(customerInfo[u].name)){
 
                     cout << "Customer room no: " << customerInfo[u].room_no;
-
                 }
 
                 cout << "No match. Try phone number.";
-
             }
-
-
 
         case 2:
 
@@ -139,15 +111,10 @@ void customer :: searchCustomer(){
                 if(ph==(customerInfo[u].phoneNo)){
 
                     cout << "Customer room no: " << customerInfo[u].room_no;
-
                 }
-
             }
-
     }
-
 }
-
 
 
 class hotel{
@@ -467,7 +434,6 @@ void hotel :: bill(){
     cout << "\n*****************************************\n";
 
 }
-
 
 
 int main(){
